@@ -7,6 +7,22 @@ const buttonLinks = [
     { id: '#ig', url: 'https://www.instagram.com/definitelynot.leii/'}
 ];
 
+const hamMenu = document.getElementById('ham-menu');
+const navlinks = document.getElementById('navlinks');
+const links = document.querySelectorAll('.navlinks a');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    navlinks.classList.toggle('active');
+});
+
+links.forEach(linkItem => {
+    linkItem.addEventListener('click', () => {
+        hamMenu.classList.remove('active');
+        navlinks.classList.remove('active');
+    });
+});
+
 buttonLinks.forEach(link => {
     const button = document.querySelector(link.id);
     if (button) {
