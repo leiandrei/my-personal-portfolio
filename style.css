@@ -576,17 +576,6 @@ button:active {
     font-weight: 700;
 }
 
-.project-link {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: auto;
-    padding-top: 1.25rem;
-    border-top: 2px solid currentColor;
-    font-weight: 700;
-    font-style: italic;
-}
-
 .reveal {
     opacity: 0;
     transform: translateY(42px);
