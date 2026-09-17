@@ -23,6 +23,7 @@
             <li><a href="#homeContent">&#91;Home&#93;</a></li>
             <li><a href="#aboutContent">&#91;About&#93;</a></li>
             <li><a href="#skillsContent">&#91;Skills&#93;</a></li>
+            <li><a href="#projectsContent">&#91;Projects&#93;</a></li>
             <li><a href="#contactsContent">&#91;Contacts&#93;</a></li>
         </ul>
     </nav>
@@ -43,7 +44,7 @@
         </section>
     </div>
     
-    <div class="abt-content" id="aboutContent">
+    <div class="abt-content reveal" id="aboutContent">
         <section class="left">
             <img src="assets/Lei.jpg" class="port-img" alt="port-img">
             <h2 class="nameHeader">Lei Andrei E. Domaoal</h2>
@@ -60,7 +61,7 @@
         </section>
     </div>
 
-    <div class="skills" id="skillsContent">
+    <div class="skills reveal" id="skillsContent">
         <section class="tech-stack">
             <h2 class="skillsHeader">Languages</h2>
             <div class="skills-container">
@@ -150,7 +151,54 @@
         </section>
     </div>
 
-    <div class="contacts" id="contactsContent">
+
+    <main class="project-content reveal" id="projectsContent">
+        <section class="project-heading">
+            <p class="project-kicker">selected_work:</p>
+            <h2 class="project-header">Projects</h2>
+            <p class="project-intro">Data science and machine learning projects built around real-world questions, reproducible analysis, and practical model evaluation.</p>
+        </section>
+
+        <section class="project-grid" id="project-grid" aria-label="Personal projects">
+            <a class="project-card reveal" href="https://github.com/leiandrei/FrauduLens-Credit-Card-Fraud-Detection-utilizing-Classifier-Models-and-Anomaly-Detection" target="_blank" rel="noopener noreferrer" aria-label="View FrauduLens — Credit Card Fraud Detection on GitHub">
+                <span class="project-number">01 / featured</span>
+                <h3>FrauduLens — Credit Card Fraud Detection</h3>
+                <p>Detects fraudulent transactions in a highly imbalanced dataset using supervised classifiers and Isolation Forest anomaly detection, with SMOTE and precision-recall analysis supporting reliable evaluation.</p>
+                <ul class="tech-list" aria-label="Technology stack">
+                    <li>Python</li><li>Pandas</li><li>Numpy</li><li>Matplotlib</li><li>Seaborn</li><li>Scikit-Learn</li><li>Imblearn</li><li>XGBoost</li><li>Jupyter</li>
+                </ul>
+                <span class="project-link">view_repository <span aria-hidden="true">↗</span></span>
+            </a>
+
+            <a class="project-card reveal" href="https://github.com/leiandrei/SpaceX-Data-Science-Project" target="_blank" rel="noopener noreferrer" aria-label="View SpaceX Data Science Project on GitHub">
+                <span class="project-number">02 / featured</span>
+                <h3>SpaceX Data Science Project</h3>
+                <p>An end-to-end pipeline combining SpaceX API data and scraped launch records to explore landing outcomes and evaluate classifier and ensemble models for Falcon 9 booster predictions.</p>
+                <ul class="tech-list" aria-label="Technology stack">
+                    <li>Python</li><li>Pandas</li><li>SQLite</li><li>Numpy</li><li>Matplotlib</li><li>Seaborn</li><li>Scikit-Learn</li><li>XGBoost</li><li>Jupyter</li>
+                </ul>
+                <span class="project-link">view_repository <span aria-hidden="true">↗</span></span>
+            </a>
+
+            <a class="project-card reveal" href="https://github.com/leiandrei/flyrank-ml-internship-starter" target="_blank" rel="noopener noreferrer" aria-label="View Ranking Signal Analysis on GitHub">
+                <span class="project-number">03 / featured</span>
+                <h3>Ranking Signal Analysis</h3>
+                <p>Applied search intelligence work using anonymized ranking data to discover useful signals, frame machine learning tasks, audit features, and build readable ranking baselines at scale.</p>
+                <ul class="tech-list" aria-label="Technology stack">
+                    <li>Hugging Face</li><li>Python</li><li>Scikit-Learn</li><li>XGBoost</li>
+                </ul>
+                <span class="project-link">view_repository <span aria-hidden="true">↗</span></span>
+            </a>
+        </section>
+
+        <div class="project-feed-status" id="project-feed-status" role="status" aria-live="polite">
+            <span class="loading-mark" aria-hidden="true"></span>
+            <span id="project-status-text">Loading more projects...</span>
+        </div>
+        <div id="project-sentinel" aria-hidden="true"></div>
+    </main>
+
+    <div class="contacts reveal" id="contactsContent">
         <section class="left-contacts">
             <h2 class="contactsHeader">Get In Touch with Me!</h2>
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="form-container">
